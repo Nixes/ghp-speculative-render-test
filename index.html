@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speculative render test</title>
+  <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "urls": ["test-speculative-render-dest.html"]
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+<h1>
+  This is a test page for testing behaviour of the chrome speculation API to force prerendering of particular pages
+</h1>
+<a href="test-speculative-render-dest.html">go to destination</a>
+</body>
+</html>
