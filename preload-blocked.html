@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speculative render test load blocked page</title>
+  <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "urls": ["preload-blocked-dest.html"]
+        }
+      ]
+    }
+  </script>
+  <script>
+    console.log("this is the index page for loading the preload blocked page");
+  </script>
+</head>
+<body>
+<h1>
+  This is a test page for testing behaviour of the chrome speculation API to force prerendering of particular pages. The page this tries to load should be blocked.
+</h1>
+<a href="preload-blocked-dest.html">go to destination</a>
+</body>
+</html>
